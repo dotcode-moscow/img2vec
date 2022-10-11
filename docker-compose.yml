@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ### image-converter ####################################################
+  img2vec:
+    build:
+      context: ./
+    network_mode: "host"
+    ports:
+      - "8099:8080"
